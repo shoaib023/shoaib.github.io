@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+
+}
+
+body{
+	background-color: aquamarine;
+	background-blend-mode: multiply;
+}
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Allura', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+
+p{
+	margin-bottom: 15px;
+	font-size: 20pxpx;
+	line-height: 20px;
+	color:black;
+}
+
+.btn a {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: transparent;
+    color: #fb2274;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.main_container{
+	position: relative;
+}
+
+/* Navigation Bar */
+.navbar{
+	width: 100%;
+	height: 65px;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #444444;
+	opacity: 0.8;
+	z-index: 3;
+	box-shadow: 1px 2px 4px 0 rgb(0, 0,0,0);
+}
+
+.logo a{
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 32px;
+	color: #fb2274;
+}
+
+.navbar_items ul{
+	display: flex;
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+	
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+	border: transparent;
+	padding: 5px 2px;
+	transition: 0.8s ease;
+	
+	
+}
+.navbar_items ul li .hm{
+	background-color: white;
+	color: black;
+	
+}
+.navbar_items ul li a:hover{
+	background-color: white;
+	color: black;
+	
+}
+
+/* banner_image */
+.banner_image{
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(andre-iv-NEeFNX_rUEo-unsplash.jpg) no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner_content{
+	text-align: center;
+	color: #fff;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.banner_content h1 span{
+	color: #fb2274;
+}
+
+
+/* About */
+.about,
+.gal,
+.achievements{
+	text-align: center;
+	padding: 5% 10%;
+}
+.contact{
+	text-align: center;
+	padding: 5% 10%;
+	border-radius: 40%;
+	
+
+}
+.myi{
+	height: 350px;
+	width: auto;
+	border-radius:50PX;
+	transition:all 1s ease;
+
+}
+.myi:hover {
+          transform: scale(1.1);
+}
+
+/* Services */
+.gal{
+	background: #f5f5f5;
+}
+
+.diff {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diff .item {
+    width: 30%;
+}
+
+.diff .item  img {
+    width: 100%;
+	margin-bottom: 25px;
+	border: transparent;
+	transition: 0s ease;
+}
+.diff .item  img:hover{
+	border: 2px solid black;
+}
+
+.diff .item  h3 {
+    color: #fb2274;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+/* Contact us */
+.form_wrapper .form_input{
+	margin-bottom: 15px;
+	
+}
+
+.form_wrapper .form_input input[type="text"]{
+	width: 250px;
+	padding: 12px 20px; 
+	border: 1px solid #ccc;
+	border-radius: 20px;
+
+}
+
+.form_wrapper .form_input textarea{
+	width: 250px;
+	padding: 12px 20px; 
+	height: 80px;
+	resize: none;
+	border: 1px solid  #ccc;
+	border-radius: 20px;
+}
+/* achievements */
+.achievements{
+	background: #f5f5f5;
+}
+
+.achievements_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.achievements_wrapper .ac{
+	display: flex;
+	justify-content: space-between;
+}
+
+.achievements_wrapper .ac-1.ac{
+	margin-bottom: 25px;
+}
+
+.achievements_wrapper .am{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.achievements_wrapper .am img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
+}
+
+.achievements_wrapper .am:hover img{
+	transform: scale(1.1);
+}
+
+/* footer */
+.footer{
+	width: 100%;
+	text-align: center;
+	background: #444444;
+	padding: 20px 0;
+	animation-name: adil;
+	animation-duration: 4s;
+	animation-iteration-count: 50;
+}
+@keyframes adil{
+	0%{background-color: #444444;}
+	15%{background-color: sandybrown;}
+	30%{background-color: silver;}
+	45%{background-color:gold;}
+	60%{background-color: yellowgreen;}
+	75%{background-color: hotpink}
+	90%{background-color: blueviolet;}
+	100%{background-color: slateblue;}
+}
+.footer a{
+	color: #fff;
+	font-size: 25px;
+}
+.gt{
+	background-color: tomato;
+	margin: 40px 20px;
+	border-radius: 40%;
+	padding: 3px 3px;
+	position: absolute;
+	bottom: -15px;
+	color: white;
+}
+.gt:hover{
+	color: tomato;
+	background-color: white;
+}
+.btn a{
+	border-radius: 10PX;
+	background-color:darkcyan;
+	color: black;
+	transition: 1s ease;
+}
+
+.btn a:hover{
+	background-color:white;
+	
+}
+.achievements h1{
+	font-size: 40px;
+}
+
+.social{
+	margin-top: 15px;
+}
+
+@media (max-width: 720px){
+
+	.navbar{
+		height: auto;
+		flex-direction: column;
+		position: relative;
+	}
+
+	.logo{
+		margin-bottom: 25px;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+		
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+		padding: 5px 5px;
+		
+		
+		
+		
+	}
+	
+	.navbar_items ul li a{
+		padding: 5px 15px;
+		
+		
+	}
+	
+
+	.banner_content{
+		margin-top: 35px;
+	}
+	.footer a{
+		color: #fff;
+		font-size: 10px;
+		
+	}
+
+}
+@media (max-width: 450px){
+	.footer a{
+		color: #fff;
+		font-size: 10px;
+	
+	}
+	.achievements H1{
+		font-size: 20PX;
+	}
+	.diff .item  h3 {
+		color: #fb2274;
+		margin-bottom: 15px;
+		font-size: 10px;
+	}
+	.about img{
+		width: 70%;
+		height: auto;
+	}
+	
+}
+
+
+i{
+	text-transform: uppercase;
+}
+/* this is not a template its prepared by me mohd adil ahmed */
